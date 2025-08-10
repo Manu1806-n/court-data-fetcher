@@ -1,23 +1,30 @@
-Project Title
+## Project Title
 
 Court-Data Fetcher & Mini-Dashboard
 
 ⸻
 
-Court Website Targeted
+## Demo Video
+
+Watch the working demo of the Court-Data Fetcher here:  
+[![Demo Video](https://img.youtube.com/vi/wS4zEtfzBoc/0.jpg)](https://youtu.be/wS4zEtfzBoc)
+
+⸻
+
+## Court Website Targeted
 
 This project targets the Faridabad District Court eCourts portal at:
 https://districts.ecourts.gov.in
 
 ⸻
 
-Objective
+## Objective
 
 A Flask-based web app to input Case Type, Case Number, and Filing Year, scrape case metadata and latest orders from the court’s public site, display results, and allow downloading a PDF report.
 
 ⸻
 
-Features
+## Features
 	•	Simple and user-friendly web UI with dropdown for Case Type
 	•	Selenium-based backend scraper with manual CAPTCHA handling
 	•	Parses parties, filing & hearing dates, case status, interim orders with PDF links
@@ -27,7 +34,7 @@ Features
 
 ⸻
 
-Setup & Installation
+## Setup & Installation
 
 Prerequisites
 	•	Python 3.8+
@@ -44,7 +51,7 @@ Running the app
 
     python app.py
 
-CAPTCHA Handling
+## CAPTCHA Handling
 
 The court site uses CAPTCHA to prevent automated scraping. This app opens a Chrome window for manual CAPTCHA input. Steps:
 	1.	The browser window will open to the court’s case search page.
@@ -57,7 +64,7 @@ This manual step ensures compliance with the site’s terms and avoids automated
 
 ⸻
 
-Usage
+## Usage
 	•	Open the web app in your browser at http://127.0.0.1:5000/
 	•	Select Case Type from dropdown, enter Case Number and Filing Year
 	•	Click Search
@@ -67,7 +74,7 @@ Usage
 
 ⸻
 
-Notes
+## Notes
 	•	Only Faridabad District Court is supported currently.
 	•	Query logs are stored in cases.db SQLite database.
 	•	PDF files are saved locally with filenames case_<case_number>_<filing_year>.pdf.
@@ -75,6 +82,7 @@ Notes
 
 ⸻
 
-License
+## License
 
 MIT License
+
